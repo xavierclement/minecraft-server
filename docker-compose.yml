@@ -1,0 +1,9 @@
+services:
+  minecraft-server:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: minecraft-server
+    container_name: minecraft-server
+    ports:
+      - "25565:25565"
